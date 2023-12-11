@@ -1,0 +1,31 @@
+POST http://localhost:3333/filme
+Content-Type: application/json
+
+{
+    "nome": "Jogos Mortais X",
+    "diretor": "Kevin Greutert",
+    "minutosduracao": "118m"
+}
+
+###
+
+GET http://localhost:3333/filme
+
+###
+
+GET http://localhost:3333/filme?search= Mortais
+
+###
+
+PUT http://localhost:3333/filmes/398aa5dc-e1b0-4e19-b3bb-5910d37e93ef
+Content-Type: application/json
+
+{
+    "nome": "Trocados",
+    "diretor": "McG",
+    "minutosduracao": "107m"
+}
+
+###
+
+DELETE http://localhost:3333/filmes/398aa5dc-e1b0-4e19-b3bb-5910d37e93ef
